@@ -223,10 +223,12 @@ p { margin: 0 0 1em; }
 .review-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
 .review .src { font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 .review .rec { font-size: .82rem; font-weight: 700; background: var(--bone); border-radius: 999px; padding: 3px 10px; }
-.review blockquote { margin: 0 0 18px; font-size: 1.12rem; line-height: 1.5; }
+.review blockquote { margin: 0 0 22px; font-size: 1.2rem; line-height: 1.5; }
+.rating-line { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 16px 0 0; color: var(--muted); }
+.rating-line strong { color: var(--ink); }
+.rating-line .dot { color: var(--line); }
 .review figcaption { margin-top: auto; display: flex; flex-direction: column; }
 .review figcaption span { color: var(--muted); font-size: .92rem; }
-.review-short { justify-content: center; }
 
 /* Review banner */
 .review-banner { padding: 56px 0; }
@@ -300,6 +302,7 @@ p { margin: 0 0 1em; }
   .strip-track img { width: 240px; height: 310px; }
   .team { grid-template-columns: 1fr 1fr; }
   .reviews { grid-template-columns: 1fr 1fr; }
+  .review { padding: 30px 28px; }
   .section { padding: 96px 0; }
   .map iframe { height: 440px; }
 }
@@ -330,7 +333,8 @@ p { margin: 0 0 1em; }
   .video-split .head { margin-bottom: 0; }
   .about { grid-template-columns: 1.05fr 1fr; gap: 72px; }
   .team { grid-template-columns: repeat(4, 1fr); }
-  .reviews { grid-template-columns: repeat(4, 1fr); }
+  .reviews { gap: 22px; }
+  .review blockquote { font-size: 1.35rem; }
   .review-banner-in { flex-direction: row; justify-content: space-between; align-items: center; }
   .contact-grid { grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center; }
   .faq-wrap { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; align-items: start; }
