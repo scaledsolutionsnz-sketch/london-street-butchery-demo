@@ -62,19 +62,6 @@
     pops.forEach(function (el) { el.classList.add('in'); });
   }
 
-  // Videos: only load the Facebook player when someone taps play
-  document.querySelectorAll('.video-cover').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var f = document.createElement('iframe');
-      f.src = btn.getAttribute('data-embed');
-      f.title = btn.getAttribute('data-title');
-      f.allow = 'autoplay; encrypted-media; picture-in-picture; web-share';
-      f.allowFullscreen = true;
-      f.setAttribute('scrolling', 'no');
-      btn.replaceWith(f);
-    });
-  });
-
   // Email: built here so the address never sits in the HTML
   document.querySelectorAll('[data-email]').forEach(function (el) {
     var to = el.getAttribute('data-user') + '@' + el.getAttribute('data-domain');

@@ -182,9 +182,9 @@ p { margin: 0 0 1em; }
 /* Videos */
 .video-split { display: grid; gap: 8px; align-items: center; }
 .video { margin: 0; }
-.video-cover, .video iframe { position: relative; display: block; width: 100%; border: 0; padding: 0; border-radius: var(--radius); overflow: hidden; background: var(--navy); cursor: pointer; }
+.video-cover { position: relative; display: block; width: 100%; border: 0; padding: 0; border-radius: var(--radius); overflow: hidden; background: var(--navy); cursor: pointer; }
 .video-tall { max-width: 360px; margin: 0 auto; width: 100%; }
-.video-tall .video-cover, .video-tall iframe { aspect-ratio: 3 / 4; }
+.video-tall .video-cover { aspect-ratio: 3 / 4; }
 .video-cover img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.92) contrast(1.06); }
 .video-cover::after { content: ""; position: absolute; inset: 0; background: rgba(15,28,69,.25); transition: background .3s; }
 .video-cover:hover::after { background: rgba(15,28,69,.1); }
