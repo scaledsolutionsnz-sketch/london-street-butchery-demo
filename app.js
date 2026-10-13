@@ -62,17 +62,5 @@
     pops.forEach(function (el) { el.classList.add('in'); });
   }
 
-  // Email: built here so the address never sits in the HTML
-  document.querySelectorAll('[data-email]').forEach(function (el) {
-    var to = el.getAttribute('data-user') + '@' + el.getAttribute('data-domain');
-    el.textContent = to;
-  });
-  document.querySelectorAll('a[data-gmail]').forEach(function (a) {
-    var to = a.getAttribute('data-user') + '@' + a.getAttribute('data-domain');
-    a.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + '&su=' + (a.getAttribute('data-su') || '') + '&body=' + (a.getAttribute('data-body') || '');
-    a.target = '_blank';
-    a.rel = 'noopener';
-  });
-
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
 })();

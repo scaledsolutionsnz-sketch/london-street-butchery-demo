@@ -207,7 +207,6 @@ p { margin: 0 0 1em; }
 .checks .ic { width: 28px; height: 28px; padding: 6px; border-radius: 50%; background: var(--yellow); color: var(--navy); }
 
 /* Team */
-.badge { display: inline-block; margin-top: 14px; background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: .82rem; font-weight: 700; color: var(--muted); }
 .team { display: grid; gap: 16px; grid-template-columns: 1fr; }
 .person { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 22px; }
 .person p { color: var(--muted); margin: 6px 0 0; }
@@ -333,7 +332,7 @@ p { margin: 0 0 1em; }
   .video-split { grid-template-columns: 1fr minmax(0, 380px); gap: 64px; }
   .video-split .head { margin-bottom: 0; }
   .about { grid-template-columns: 1.05fr 1fr; gap: 72px; }
-  .team { grid-template-columns: repeat(4, 1fr); }
+  .team { grid-template-columns: repeat(3, 1fr); }
   .reviews { gap: 22px; }
   .review blockquote { font-size: 1.35rem; }
   .review-banner-in { flex-direction: row; justify-content: space-between; align-items: center; }
